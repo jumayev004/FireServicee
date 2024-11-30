@@ -1,0 +1,45 @@
+/* Общие стили */
+body {
+    font-family: 'Verdana', sans-serif; /* Шрифт для всей страницы */
+    background: url('FireService.png') no-repeat center center fixed; /* Фоновое изображение */
+    background-size: cover; /* Фон будет покрывать всю страницу */
+    background-position: center; /* Фон будет центрирован */
+    background-attachment: fixed; /* Фон будет фиксированным при прокрутке */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирует контент по горизонтали */
+    align-items: flex-start; /* Выравнивает контент по верхнему краю */
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px; /* Увеличена максимальная ширина контейнера */
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для контейнера */
+    padding: 30px; /* Увеличены отступы */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin: 0 auto;
+}
+
+h1, h3 {
+    color: #2980b9; /* Синий цвет заголовков */
+}
+
+p {
+    font-size: 1.2em; /* Увеличен размер шрифта для параграфов */
+    margin: 10px 0; /* Отступы сверху и снизу для параграфов */
+    color: #333; /* Темно-серый цвет текста */
+}
+
+a.moreinfo {
+    color: #2980b9; /* Синий цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a.moreinfo:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}

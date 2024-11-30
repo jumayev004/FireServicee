@@ -1,0 +1,131 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background: url('FireService.png') no-repeat center center fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 150vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.8);  /* Полупрозрачный белый фон для контейнера */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto; /* Увеличен верхний и нижний отступ */
+}
+
+/* Стили для контейнера кнопок */
+.button-container {
+    display: flex; /* Устанавливаем контейнер как flex-контейнер */
+    justify-content: space-between; /* Распределяем кнопки равномерно по горизонтали */
+    margin-bottom: 20px; /* Отступ снизу, если нужно */
+}
+
+/* Стили для кнопок */
+.ui-button {
+    padding: 15px;
+    margin: 0 5px; /* Отступ между кнопками */
+    background-color: #2980b9;  /* Синий цвет кнопок */
+    color: #fff;  /* Белый цвет текста на кнопках */
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; /* Убираем стандартные границы */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.ui-button:hover {
+    background-color: #1a6f9a; /* Цвет фона при наведении */
+}
+
+/* Остальные стили остаются без изменений */
+a {
+    text-decoration: none;
+    color: #2980b9;  /* Синий цвет ссылок */
+    font-size: 1.1rem;
+}
+
+.detail {
+    color: #333;  /* Темно-серый цвет текста */
+}
+
+/* Заголовок */
+h1 {
+    font-size: 3rem;
+    color: #2980b9;  /* Синий цвет заголовка */
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2980b9;  /* Синий цвет заголовка */
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    width: 90%;
+    display: block;
+    float: left;
+    margin: 20px auto;
+}
+
+/* Секция с информацией о пользователе */
+b {
+    font-weight: bold;
+    color: #333;  /* Темно-серый цвет текста */
+    font-size: 1.1rem;
+}
+
+/* Секция с инцидентами */
+h4 {
+    color: #2980b9;  /* Синий цвет заголовка */
+    font-size: 1.6rem;
+    margin-top: 50px;
+    display: block;
+}
+
+.incident-item {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.8);  /* Полупрозрачный белый фон для инцидентов */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.incident-item b {
+    font-size: 1.4rem;
+    color: #2980b9;  /* Синий цвет выделенного текста */
+}
+
+.incident-item a {
+    color: #2980b9;  /* Синий цвет ссылок в инцидентах */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.incident-item a:hover {
+    text-decoration: underline;  /* Подчеркивание при наведении */
+}
+
+/* Сообщение об отсутствии инцидентов */
+h3.no-incidents {
+    color: #333;  /* Темно-серый цвет текста при отсутствии инцидентов */
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Сообщение об ошибке */
+h2 {
+    text-align: center;
+    color: #e74c3c;  /* Красный цвет ошибки */
+    font-size: 1.5rem;
+    margin-top: 20px;
+}

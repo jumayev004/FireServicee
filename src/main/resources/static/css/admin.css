@@ -1,0 +1,80 @@
+/* Общие стили (копируем из основного файла) */
+body {
+    font-family: 'Verdana', sans-serif; /* Шрифт для всей страницы */
+    background: url('FireService.png') no-repeat center center fixed; /* Фоновое изображение */
+    background-size: cover; /* Фон будет покрывать всю страницу */
+    background-position: center; /* Фон будет центрирован */
+    background-attachment: fixed; /* Фон будет фиксированным при прокрутке */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирует контент по горизонтали */
+    align-items: flex-start; /* Выравнивает контент по верхнему краю */
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Увеличена максимальная ширина контейнера */
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для контейнера */
+    padding: 30px; /* Увеличены отступы */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin: 0 auto;
+}
+
+h1, h3, h4 {
+    color: #2980b9; /* Синий цвет заголовков */
+}
+
+p {
+    font-size: 1.2em; /* Увеличен размер шрифта для параграфов */
+    margin: 10px 0; /* Отступы сверху и снизу для параграфов */
+    color: #333; /* Темно-серый цвет текста */
+}
+
+a.moreinfo {
+    color: #2980b9; /* Синий цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a.moreinfo:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Специфические стили для страницы администрирования */
+table {
+    width: 100%; /* Ширина таблицы на всю ширину контейнера */
+    border-collapse: collapse; /* Убираем двойные границы */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+th.smooth, td {
+    color: #2980b9; /* Цвет заголовков и ячеек */
+    padding: 15px; /* Увеличены отступы в ячейках */
+    font-size: 1.2em; /* Увеличен размер шрифта в таблице */
+    text-align: center; /* Центрируем текст в ячейках */
+}
+
+th.smooth {
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон для заголовков */
+}
+
+form {
+    display: inline; /* Отображение формы в одной строке */
+}
+
+.Ban {
+    background-color: #e74c3c; /* Цвет кнопки "Бан" */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    padding: 5px 10px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Скругленные углы */
+    cursor: pointer; /* Курсор при наведении */
+}
+
+.Ban:hover {
+    background-color: #c0392b; /* Темный цвет при наведении на кнопку */
+}

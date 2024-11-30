@@ -1,0 +1,85 @@
+/* Общие стили */
+body {
+    font-family: 'Verdana', sans-serif; /* Шрифт для всей страницы */
+    background: url('FireService.png') no-repeat center center fixed; /* Фоновое изображение */
+    background-size: cover; /* Фон будет покрывать всю страницу */
+    background-position: center; /* Фон будет центрирован */
+    background-attachment: fixed; /* Фон будет фиксированным при прокрутке */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирует контент по горизонтали */
+    align-items: flex-start; /* Выравнивает контент по верхнему краю */
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px; /* Увеличена максимальная ширина контейнера */
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для контейнера */
+    padding: 30px; /* Увеличены отступы */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+    margin-top: 40px;
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+h1, h3 {
+    color: #2980b9; /* Синий цвет заголовков */
+    text-align: center; /* Центрируем заголовки */
+}
+
+p {
+    font-size: 1.2em; /* Увеличен размер шрифта для параграфов */
+    margin: 10px 0; /* Отступы сверху и снизу для параграфов */
+    color: #333; /* Темно-серый цвет текста */
+}
+
+a.moreinfo {
+    color: #2980b9; /* Синий цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a.moreinfo:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Стили для кнопок */
+.button-container {
+    display: flex; /* Используем flexbox для кнопок */
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.ui-button {
+    background-color: #2980b9; /* Цвет кнопок */
+    color: white; /* Цвет текста кнопок */
+    padding: 10px 15px; /* Отступы внутри кнопок */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    font-size: 1em; /* Размер шрифта */
+    margin: 0 10px; /* Отступы между кнопками */
+    transition: background-color 0.3s; /* Плавный переход для изменения цвета фона */
+}
+
+.ui-button:hover {
+    background-color: #1c5980; /* Темный цвет при наведении */
+}
+
+/* Стили для полей ввода */
+.form-input {
+    width: 100%; /* Ширина поля ввода */
+    padding: 10px; /* Отступы внутри поля ввода */
+    margin-top: 5px; /* Отступ сверху для поля ввода */
+    border: 1px solid #ccc; /* Граница поля ввода */
+    border-radius: 5px; /* Скругление углов */
+    font-size: 1em; /* Размер шрифта */
+    transition: border-color 0.3s; /* Плавный переход для изменения цвета границы */
+}
+
+.form-input:focus {
+    border-color: #2980b9; /* Цвет границы при фокусе */
+    outline: none; /* Убираем стандартный контур */
+}

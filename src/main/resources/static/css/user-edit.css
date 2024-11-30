@@ -1,0 +1,71 @@
+/* Общие стили */
+body {
+    font-family: 'Verdana', sans-serif; /* Шрифт для всей страницы */
+    background: url('FireService.png') no-repeat center center fixed; /* Фоновое изображение */
+    background-size: cover; /* Фон будет покрывать всю страницу */
+    background-position: center; /* Фон будет центрирован */
+    background-attachment: fixed; /* Фон будет фиксированным при прокрутке */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирует контент по горизонтали */
+    align-items: center; /* Центрирует контент по вертикали */
+    height: 100vh; /* Высота на весь экран */
+}
+
+.container {
+    width: 90%; /* Ширина контейнера */
+    max-width: 500px; /* Максимальная ширина контейнера */
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для контейнера */
+    padding: 30px; /* Увеличены отступы */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Центрируем текст внутри контейнера */
+}
+
+h1 {
+    color: olive; /* Цвет заголовка */
+    margin-bottom: 20px; /* Отступ снизу заголовка */
+}
+
+h4 {
+    margin-bottom: 10px; /* Отступ снизу для заголовка профиля */
+}
+
+hr.no_hr {
+    border: none; /* Убираем стандартные границы */
+    height: 1px; /* Высота линии */
+    background-color: #ccc; /* Цвет линии */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.big_block {
+    font-size: 1.5em; /* Увеличенный размер шрифта */
+    color: #2980b9; /* Цвет для больших блоков текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin: 15px 0; /* Отступы сверху и снизу */
+}
+
+.big_block:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+form {
+    margin-top: 20px; /* Отступ сверху для формы */
+}
+
+.btn_registration {
+    background-color: #2980b9; /* Цвет кнопки регистрации */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Скругленные углы */
+    cursor: pointer; /* Курсор при наведении */
+    font-size: 1em; /* Размер шрифта */
+    width: 100%; /* Кнопка занимает всю ширину контейнера */
+    max-width: 200px; /* Максимальная ширина кнопки */
+}
+
+.btn_registration:hover {
+    background-color: #1c5980; /* Темный цвет кнопки при наведении */
+}
